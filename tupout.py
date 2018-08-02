@@ -8,6 +8,9 @@ my_dict = {
 #[("Speros", "(555) 555-5555"), ("Michael", "(999) 999-9999"), ("Jay", "(777) 777-7777")]
 
 def tupOut(dic):
-    print [dic][0]
+    lis = []
+    for x, y in dic.iteritems():
+        lis.append((x,y))
+    print lis
 tupOut(my_dict)
 # python tupout.py
