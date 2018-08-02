@@ -9,8 +9,9 @@ my_dict = {
 
 def tupOut(dic):
     lis = []
-    for x, y in dic.iteritems():
-        lis.append((x,y))
+    for x in dic.items():
+        lis.append(x)  
+        #lis.append((x,y))  
     print lis
 tupOut(my_dict)
 # python tupout.py
